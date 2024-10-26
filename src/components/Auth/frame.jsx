@@ -71,6 +71,7 @@ export default function Frame({ isLogin }) {
         onChange={(e) => setPassword(e.target.value)}
         label="Password"
         isPassword={true}
+        isLogin={isLogin}
       />
       {!isLogin && (
         <Input
@@ -79,6 +80,7 @@ export default function Frame({ isLogin }) {
           onChange={(e) => setConfirmPassword(e.target.value)}
           label="Konfirmasi Password"
           isPassword={true}
+          isSignUp={true}
         />
       )}
 
